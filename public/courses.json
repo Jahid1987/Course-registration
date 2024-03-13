@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "cover": "https://i.postimg.cc/5yLp4qDJ/Rectangle-2-2.png",
+    "title": "The Mysterious Island",
+    "description": "A group of castaways must survive on a deserted island.",
+    "price": 14.99,
+    "credit": 0
+  },
+  {
+    "id": 2,
+    "cover": "https://i.postimg.cc/RVxXPynZ/Rectangle-2-3.png",
+    "title": "AI for Beginners",
+    "description": "Learn the basics of Artificial Intelligence.",
+    "price": 29.95,
+    "credit": 5
+  },
+  {
+    "id": 3,
+    "cover": "https://i.postimg.cc/LXrNF0Cv/Rectangle-2-4.png",
+    "title": "Building with Style",
+    "description": "A guide to modern architecture and design.",
+    "price": 34.5,
+    "credit": 10
+  },
+  {
+    "id": 4,
+    "cover": "https://i.postimg.cc/4xBPx32Y/Rectangle-2-5.png",
+    "title": "Hiking in the Rockies",
+    "description": "Explore the breathtaking scenery of the Rocky Mountains.",
+    "price": 19.99,
+    "credit": 2
+  },
+  {
+    "id": 5,
+    "cover": "https://i.postimg.cc/ryrfNMsH/Rectangle-2-6.png",
+    "title": "The Power of Positive Thinking",
+    "description": "Learn how to develop a positive mindset for success.",
+    "price": 12.5,
+    "credit": 3
+  },
+  {
+    "id": 6,
+    "cover": "https://i.postimg.cc/g2Y4phs9/Rectangle-3.png",
+    "title": "Amazing Animals",
+    "description": "Discover the incredible diversity of the animal kingdom.",
+    "price": 24.99,
+    "credit": 8
+  },
+  {
+    "id": 7,
+    "cover": "https://i.postimg.cc/J43KSxbc/Rectangle-3-1.png",
+    "title": "The Art of Cooking",
+    "description": "Master essential culinary techniques and create delicious meals.",
+    "price": 39.95,
+    "credit": 15
+  },
+  {
+    "id": 8,
+    "cover": "https://i.postimg.cc/ryrfNMsH/Rectangle-2-6.png",
+    "title": "Train Like a Champion",
+    "description": "Get fit and achieve your fitness goals with expert training tips.",
+    "price": 17.99,
+    "credit": 4
+  },
+  {
+    "id": 9,
+    "cover": "https://i.postimg.cc/RVxXPynZ/Rectangle-2-3.png",
+    "title": "Purrfect Companions: All About Cats",
+    "description": "Unravel the mysteries of feline behavior and care for your furry friend.",
+    "price": 9.99,
+    "credit": 1
+  },
+  {
+    "id": 10,
+    "cover": "https://i.postimg.cc/RVxXPynZ/Rectangle-2-3.png",
+    "title": "Fashion Forward: Trends for Every Season",
+    "description": "Stay on top of the latest styles and create your own unique look.",
+    "price": 22.5,
+    "credit": 7
+  }
+]
