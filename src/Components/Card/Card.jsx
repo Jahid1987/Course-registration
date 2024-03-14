@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 const Card = ({ course, handleSetCartItems }) => {
   const { cover, title, price, description, credit } = course;
   return (
-    <div className=" card card-compact max-w-72 bg-base-100 shadow-xl rounded-lg">
+    <div className=" card card-compact w-full md:max-w-72 bg-base-100 shadow-xl rounded-lg">
       <figure className=" mt-1">
         <img src={cover} alt="Shoes" />
       </figure>

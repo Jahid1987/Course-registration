@@ -13,7 +13,7 @@ const Courses = (props) => {
   //   console.log(courses);
 
   return (
-    <div className=" grid grid-cols-3 gap-4">
+    <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       {courses.map((course) => (
         <Card {...props} key={course.id} course={course}></Card>
       ))}

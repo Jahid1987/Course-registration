@@ -13,16 +13,13 @@ function App() {
   function handleSetCartItems(course) {
     const isExist = cartItems.find((item) => item.id === course.id);
     const totalCreditAdded = cartItems.reduce((a, b) => a + b.credit, 0);
-
+    if (totalCreditAdded + course.credit > totalCredit) {
+      return toast.error("Only 20 credit is allowed!");
+    }
     if (!isExist) {
-      if (totalCreditAdded + course.credit > totalCredit) {
-        toast.error("Only 20 credit is allowed!");
-        return;
-      } else {
-        setCartItems([...cartItems, course]);
-        toast.success("Course Added!");
-        return;
-      }
+      setCartItems([...cartItems, course]);
+      toast.success("Course Added!");
+      return;
     } else {
       toast.warn("Already exist!");
       return;
@@ -31,11 +28,11 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className=" ">
         <header>
-          <Nav></Nav>
+          <Nav cartItems={cartItems}></Nav>
         </header>
-        <main className=" pr-2 pl-2 mt-5 flex flex-col lg:flex-row gap-3 justify-between items-start ">
+        <main className="max-w-7xl mx-auto  pr-2 pl-2 pt-24 flex flex-col md:flex-row gap-3 justify-between items-start ">
           <Courses handleSetCartItems={handleSetCartItems}></Courses>
           <Cart totalCredit={totalCredit} cartItems={cartItems}></Cart>
         </main>
