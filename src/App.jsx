@@ -1,12 +1,35 @@
+import { useState } from "react";
 import "./App.css";
+import Cart from "./Components/Cart/Cart";
+import Courses from "./Components/Courses/Courses";
+import Nav from "./Components/Nav/Nav";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
+  const [cartItems, setCartItems] = useState([]);
+
+  function handleSetCartItems(course) {
+    const isExist = cartItems.find((item) => item.id === course.id);
+    if (!isExist) {
+      setCartItems([...cartItems, course]);
+    } else {
+      toast("Already exist.");
+    }
+  }
+
   return (
     <>
-      <div className="navbar bg-base-100">
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+      <div>
+        <header>
+          <Nav></Nav>
+        </header>
+        <main className=" mt-5 flex flex-col lg:flex-row gap-3 justify-between items-start ">
+          <Courses handleSetCartItems={handleSetCartItems}></Courses>
+          <Cart cartItems={cartItems}></Cart>
+        </main>
+        <ToastContainer></ToastContainer>
       </div>
-      <h1 className="text-3xl font-sans font-bold underline">Hello world!</h1>
     </>
   );
 }
