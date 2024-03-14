@@ -24,7 +24,7 @@ function App() {
         <header>
           <Nav></Nav>
         </header>
-        <main className=" mt-5 flex flex-col lg:flex-row gap-3 justify-between items-start ">
+        <main className=" pr-2 pl-2 mt-5 flex flex-col lg:flex-row gap-3 justify-between items-start ">
           <Courses handleSetCartItems={handleSetCartItems}></Courses>
           <Cart cartItems={cartItems}></Cart>
         </main>
